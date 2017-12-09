@@ -1,0 +1,235 @@
+@import './var';
+@import './base';
+@import './fun';
+
+html {
+  font-size: @html_size;
+}
+body{
+  font-size:unit(14/@html_size, rem);
+  color: #fff;
+}
+.container{
+  position:relative;
+}
+.container:before{
+  content:'';
+  display: table;
+}
+.container:after{
+  content:'';
+  display: table;
+  clear: both;
+}
+.fs12{
+  .fs(12);
+}
+.fs24{
+  .fs(24);
+}
+.m-b20{
+  .m-b(20);
+}
+.m-b10{
+  .m-b(10);
+}
+.m-t20{
+  .m-t(20);
+}
+.pd20 {
+  padding:0 unit(20/@html_size, rem);
+}
+.lh30{
+  .lh(30);
+}
+nav{
+   .h(80);
+  .logo{
+    .w(118);
+    .h(60);
+  }
+  .nav-bar{
+    height:100%;
+    width:45%;
+    li{
+      .p-b(10);
+      border-bottom:2px solid transparent;
+      &.active{
+        color: @yellow-bg;
+        border-color:@yellow-bg;
+      }
+    }
+  }
+}
+.bg-1{
+  .h(211);
+  background-size:100% 100%;
+  background-image: url('../images/h5/bg1@2x.png');
+  .mac-img{
+    .w(337);
+    .h(216);
+    z-index:99;
+    top: unit(70/@html_size, rem);
+    left:50%;
+    -webkit-transform: translate3d(-50%,0,0);
+    -moz-transform: translate3d(-50%,0,0);
+    -ms-transform: translate3d(-50%,0,0);
+    -o-transform: translate3d(-50%,0,0);
+    transform: translate3d(-50%,0,0);
+  }
+}
+
+.bg-2{
+  .h(375);
+  .bg-title{
+    background-image: url('../images/h5/title1@2x.png');
+    background-size:100% 100%;
+    .w(200);
+    .h(35);
+    margin: unit(80*@dpr/@html_size, rem) auto 0.3rem;
+  }
+  .tiyan{
+    padding: 1px 1.2rem;
+    background-image: url("../images/h5/tiyan.gif");
+    background-size:100% 100%;
+  }
+  .line{
+    .w(180);
+    .h(2);
+  }
+  .text-content{
+    .m-t(10);
+    .lh(30);
+  }
+  .text-tabs {
+    .m-t(20);
+    span{
+      border-radius:0.1rem;
+      padding:0.2rem 0.4rem;
+      background-color:#E8202F;
+    }
+  }
+  .lottery-imgs {
+    .h(103);
+    margin: 0.3rem auto 0;
+    background-image: url("../images/h5/icon@2x.png");
+    background-size: 100% 100%;
+  }
+}
+
+.bg-3 {
+  .h(667);
+  background: url("../images/h5/bg2@2x.png") repeat-y;
+  background-size: 100% 100%;
+  .bg-title{
+    margin: 2rem auto 0.5rem;
+    .w(150);
+    .h(20);
+    background-image: url("../images/h5/title2@2x.png");
+    background-size: 100% 100%;
+  }
+  .top-items, .bottom-items {
+    li{
+      .w(50);
+      .h(50);
+      border-radius:0.2rem;
+    }
+  }
+  .top-items {
+    width:90%;
+  }
+  .bottom-items{
+    width:52.5%;
+    margin:0.25rem 0 0 0.85rem;
+  }
+  .girl {
+    .w(342*0.9);
+    .h(409);
+    bottom:0;right:0;
+  }
+}
+
+.bg-4 {
+  background-image: url("../images/h5/bg3@2x.png");
+  background-size: 100% 100%;
+  .h(667);
+  .bg-title{
+    background-image: url('../images/h5/title3@2x.png');
+    background-size: 100% 100%;
+    .w(58);
+    .h(20);
+    margin: unit(90*@dpr/@html_size, rem) auto unit(10*@dpr/@html_size, rem);
+  }
+  .lotteries {
+    .w(295);
+    .h(266);
+    //background:rgba(0,0,0,0.1);
+    border-radius: 0.2rem;
+    margin: 1rem auto 0;
+    padding: 0.5rem;
+    ul{
+      width: 50%;
+      li{
+        padding-left:0.5rem;
+        .lh(30);
+        position:relative;
+        &:before{
+          content:'';
+          .w(6);
+          .h(6);
+          background-color: #fff;
+          border-radius:50%;
+          position:absolute;
+          top:52%;
+          left:unit(10*@dpr/@html_size, rem);
+          -webkit-transform: translate3d(0,-50%,0);
+          -moz-transform: translate3d(0,-50%,0);
+          -ms-transform: translate3d(0,-50%,0);
+          -o-transform: translate3d(0,-50%,0);
+          transform: translate3d(0,-50%,0);
+        }
+      }
+    }
+  }
+}
+.bg-5{
+  height:14.6rem;
+  background-image: url("../images/h5/bg4@2x.png");
+  background-size: 100% 100%;
+  .bg-title {
+    .w(115);
+    .h(20);
+    margin-top:3.6rem;
+    .m-b(10);
+    background-image: url("../images/h5/title4@2x.png");
+    background-size:100% 100%;
+  }
+  .qr-code {
+    margin:0.5rem auto 0;
+  }
+  .skype {
+    .w(180);
+    .h(130);
+    margin:0.2rem auto 0;
+    background-image: url("../images/h5/skype@2x.png");
+    background-size:100% 100%;
+  }
+}
+footer{
+  .h(121);
+  background-color:#A30100;
+  .bottom-logo {
+    .m-t(20);
+    .m-b(10);
+  }
+  .left-line, .right-line {
+    .w(100);
+    .h(12);
+  }
+  .left-line {
+    background-image: url("../images/h5/side1@2x.png");
+  }
+  .right-line {
+    background-image: url("../images/h5/side2@2x.png");
+  }
+}

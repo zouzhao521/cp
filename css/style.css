@@ -339,7 +339,8 @@ header .logo {
     margin: 40px auto 0;
 }
 .bg-home-2 .left-article .bottom-list {
-    width: 380px;
+    width:485px;
+    margin-left: 110px;
 }
 .bg-home-2 .left-article .top-list > li,
 .bg-home-2 .left-article .bottom-list > li {
@@ -408,7 +409,7 @@ header .logo {
 }
 .bg-home-3 .product-list > li {
     background-color: transparent;
-    width: 25%;
+    width: 20%;
     height: 50%;
     position: relative;
     border-right: 1px dashed #ddd;
@@ -441,7 +442,7 @@ header .logo {
     transition: all .3s;
 }
 .bg-home-3 .product-list > li img {
-    margin: 15% auto 0;
+    margin: 19% auto 0;
     width: 35%;
     display: block;
 }

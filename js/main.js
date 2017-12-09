@@ -5,6 +5,5 @@ $(function () {
         menu: '#nav_menu',
         onLeave: function (index, nextIndex, direction) {
         }
-
     });
 });
