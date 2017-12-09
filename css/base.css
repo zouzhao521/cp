@@ -1,0 +1,177 @@
+/*
+  文字
+*/
+/*
+  背景色
+*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+  color: #232323;
+}
+input {
+  line-height: normal;
+}
+input,
+textarea,
+button {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: middle;
+  background: none;
+}
+input::placeholder,
+textarea::placeholder,
+button::placeholder {
+  color: #cccccc;
+}
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+div,
+header,
+footer,
+aside,
+article,
+section,
+form,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.container:before {
+  content: '';
+  display: table;
+  clear: both;
+}
+.container:after {
+  content: '';
+  display: table;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.lh-30 {
+  line-height: 30px;
+}
+.lh-35 {
+  line-height: 35px;
+}
+.lh-40 {
+  line-height: 40px;
+}
+.m-t10 {
+  margin-top: 10px;
+}
+.fs20 {
+  font-size: 20px;
+}
+.fs30 {
+  font-size: 30px;
+}
+.bold {
+  font-weight: 600;
+}
+.red {
+  color: #a30100;
+}
+.gray {
+  color: #ddd;
+}
+.white {
+  color: #fff;
+}
+.black {
+  color: #232323;
+}
+.bg-red {
+  background-color: #a30100;
+}
+.bg-gray {
+  background-color: #ddd;
+}
+.bg-white {
+  background-color: #fff;
+}
+.bg-yellow {
+  background-color: #fff335;
+  color: red;
+}
+.bg-black {
+  background-color: #333;
+}
+.re {
+  position: relative;
+}
+.ab {
+  position: absolute;
+}
+.m-auto {
+  margin: 0 auto;
+}
+.flex-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.flex-space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}

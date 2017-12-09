@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>fullPage.js — 绑定菜单演示_dowebok</title>
+
+    <style>
+       .nav-bar li a{color: #ffffff}
+       .bg-home {
+           padding-bottom: 53.52083333% !important;
+       }
+        .spbg{
+            background: url('./images/dj.png');
+            width:300px;
+            height: 40px;
+        }
+    </style>
+    <script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://cdn.dowebok.com/77/js/jquery.fullPage.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        $(function(){
+            $('#dowebok').fullpage({
+                sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+                anchors: ['page1', 'page2', 'page3', 'page4'],
+                menu: '#menu'
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<ul id="menu">
+    <header class="flex-space">
+        <img class="logo " src="./images/logo.png"/>
+        <ul class="white nav-bar">
+            <li data-menuanchor="page1" class="active"><a href="#page1">首頁</a></li>
+            <li data-menuanchor="page2"><a href="#page2">創新優勢</a></li>
+            <li data-menuanchor="page3"><a href="#page3">全新彩種</a></li>
+            <li><a href="http://www.boyou.me" target="_blank">體驗中心</a></li>
+            <li data-menuanchor="page4"><a href="#page4">聯系我們</a></li>
+        </ul>
+    </header>
+</ul>
+
+<div id="dowebok">
+    <div class="section">
+        <section class="bg-home bg-home-1 re">
+            <img class="fl mac-img" src="./images/home1-mac.png" alt="">
+            <div class="fr white right-article ab">
+                <h3 class="bg-title"></h3>
+                <p class="top-line lh-40 fs20" style="width:100%;">當天完成新支付接入、新彩種接入</p>
+                <p style="width:132%;" class="fs20 lh-40">開站上線包括手機版、電腦版、苹果app、安卓app</p>
+                <p class="m-t10 flex-space btn-red">
+                    <span class="bg-red">官方彩</span>
+                    <span class="bg-red">自主彩</span>
+                    <span class="bg-red">官方彩+自主彩</span>
+                </p>
+            </div>
+            <div class="ab bottom-bg">
+                <img class="ab pic5" src="./images/home1-pic5.png" alt="">
+                <img class="ab pic1" src="./images/home1-pic1.png" alt="">
+                <img class="ab pic2" src="./images/home1-pic2.png" alt="">
+                <img class="ab pic3" src="./images/home1-pic3.png" alt="">
+                <img class="ab pic4" src="./images/home1-pic4.png" alt="">
+            </div>
+        </section>
+    </div>
+    <div class="section">
+        <section class="bg-home bg-home-2 re">
+            <div class="ab left-article white">
+                <h3 class="bg-title m-auto"></h3>
+                <h4 class="center fs30 lh-40 m-t10">創新優勢</h4>
+                <p class="center lh-30">
+                    最齊全的彩種 , 功能齊全 , 系統 , 先進 , 穩定包網
+                </p>
+                <p class="center lh-30">以客戶滿意度, 體驗度，簡易上手定制彩票平臺</p>
+                <ul class="flex-space top-list">
+                    <li class="center bg-white red">
+                        <p class="m-t25">快速</p>
+                        <p>充提現</p>
+                    </li>
+                    <li class="center bg-white red">
+                        <p class="m-t25">無痕</p>
+                        <p>轉站</p>
+                    </li>
+                    <li class="center bg-white red">
+                        <p class="m-t25">紅包</p>
+                        <p>活動</p>
+                    </li>
+                    <li class="center bg-white red lh80">限註額</li>
+                    <li class="center bg-white red">
+                        <p class="m-t25">免停機</p>
+                        <p>維護</p>
+                    </li>
+                </ul>
+                <ul class="flex-space bottom-list m-auto">
+                    <li class="center bg-white red">
+                        <p class="m-t25">無痕</p>
+                        <p>代理</p>
+                    </li>
+                    <li class="center bg-white red">
+                        <p class="m-t25">免費</p>
+                        <p>試玩</p>
+                    </li>
+                    <li class="center bg-white red">
+                        <p class="m-t25">防域</p>
+                        <p>名劫持</p>
+                    </li>
+                    <li class="center bg-white red">
+                        <p class="m-t25">超強</p>
+                        <p>高防</p>
+                    </li>
+                </ul>
+            </div>
+            <img class="ab" src="./images/home2-pic.png" alt="">
+            <a href="https://www.boyou.me/lottery/buy"  target="_blank" class="ab click-tiyan">
+                <img src="./images/home2-click.png" alt="">
+            </a>
+        </section>
+    </div>
+    <div class="section">
+        <section class="bg-home bg-home-3 re">
+            <h3 class="ab bg-title center"></h3>
+            <p class="ab center show-product bold">全新彩種</p>
+            <p class="ab center product-content fs20">
+                目前平台提供50多款彩票，彩種業界最多！除了涵蓋所有火熱的官方彩種外研發團隊不斷開創新玩法，滿足玩家的多元需求
+            </p>
+            <ul class="ab product-list">
+                <li class="right-dashed bottom-dashed re">
+                    <div>
+                        <img src="./images/home3-pic1.png" alt="">
+                        <img src="./images/home3-select1.png" alt="">
+                    </div>
+                </li>
+                <li class="right-dashed bottom-dashed re">
+                    <div>
+                        <img src="./images/home3-pic2.png" alt="">
+                        <img src="./images/home3-select2.png" alt="">
+                    </div>
+                </li>
+                <li class="right-dashed bottom-dashed re">
+                    <div>
+                        <img src="./images/home3-pic3.png" alt="">
+                        <img src="./images/home3-select3.png" alt="">
+                    </div>
+                </li>
+                <li class="bottom-dashed re">
+                    <div>
+                        <img src="./images/home3-pic4.png" alt="">
+                        <img src="./images/home3-select4.png" alt="">
+                    </div>
+                </li>
+                <li class="right-dashed re">
+                    <div>
+                        <img src="./images/home3-pic5.png" alt="">
+                        <img src="./images/home3-select5.png" alt="">
+                    </div>
+                </li>
+                <li class="right-dashed re">
+                    <div>
+                        <img src="./images/home3-pic6.png" alt="">
+                        <img src="./images/home3-select6.png" alt="">
+                    </div>
+                </li>
+                <li class="right-dashed re">
+                    <div>
+                        <img src="./images/home3-pic7.png" alt="">
+                        <img src="./images/home3-select7.png" alt="">
+                    </div>
+                </li>
+                <li class="right-dashed re">
+                    <div>
+                        <img src="./images/home3-pic8.png" alt="">
+                        <img src="./images/home3-select8.png" alt="">
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="section">
+        <footer class="foot bg-home re">
+            <div class="ab contact-us flex-middle">
+                <div class="left-line"></div>
+                <div class="white fs30" style="margin:0 20px;">聯系我們</div>
+                <div class="right-line"></div>
+            </div>
+            <p class="ab white center text-content fs20">
+                專注營銷，一切技術交給我們,共創共贏以獲取有競爭力的市場報價。
+            </p>
+            <div class="ab qr-code flex-space">
+                <div class="center">
+                    <img src="./images/ios.jpg" alt="">
+                    <p class="center">苹果app</p>
+                </div>
+                <div class="center">
+                    <img src="./images/Android.jpg" alt="">
+                    <p class="center">安卓app</p>
+                </div>
+            </div>
+            <div class="ab flex-space email white">
+                <!--<img src="./images/home4-pic.png" alt="">-->
+                <span class="left-text">了解平臺包網</span>
+                <button class="" style="background:#eeeeee">
+                    <a href="skype:market.longtou?chat" class="red">
+                        点击联系Skype:boyoucaipiao@gmail.com
+                    </a>
+                </button>
+                <span class="right-text">定制介接洽谈</span>
+                <!--<img src="./images/home4-pic2.png" alt="">-->
+            </div>
+            <div class="ab flex-middle bottom-logo">
+                <div class="left-line bg-white"></div>
+                <img src="./images/logo.png" alt="">
+                <div class="right-line bg-white"></div>
+            </div>
+            <p class="ab bottom-text white">Copyrights by Rolling Bet 2017. All Rights Reserved.</p>
+        </footer>
+    </div>
+</div>
+
+</body>
+</html>
