@@ -178,7 +178,9 @@
     const $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
     let meta = document.getElementById('viewport');
     function reHtmlSize(){
-        if(window.innerWidth > 768) {
+       if(/Android|webOS|iPhone|Windows Phone|iPod|BlackBerry|SymbianOS/i.test(navigator.userAgent) || window.innerWidth <= 800) {
+        
+        }else{
             location.href = "index.html"
         }
         let dpr = Math.round(window.devicePixelRatio);

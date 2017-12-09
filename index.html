@@ -237,7 +237,7 @@
     });
     window.onresize= redom
     function redom() {
-        if(window.innerWidth < 767) {
+        if(/Android|webOS|iPhone|Windows Phone|iPod|BlackBerry|SymbianOS/i.test(navigator.userAgent) || window.innerWidth <= 800) {
             location.href = 'h5.html'
         }
     }
