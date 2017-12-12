@@ -53,7 +53,55 @@
 .right(@px){
   right: unit(@px*@dpr/@html_size, rem);
 }
-
+.flexbox() {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  display: flex!important;
+}
+.justify-content(@jc) when (@jc = flex-start) {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+.justify-content(@jc) when (@jc = flex-end) {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.justify-content(@jc) when (@jc = space-between) {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.justify-content(@jc) when not (@jc = flex-start) and not (@jc = flex-end) and not (@jc = space-between) {
+  -webkit-box-pack: @jc;
+  -ms-flex-pack: @jc;
+  -webkit-justify-content: @jc;
+  justify-content: @jc;
+}
+.align-items(@ai) when (@ai = flex-start) {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+.align-items(@ai) when (@ai = flex-end) {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+.align-items(@ai) when not (@ai = flex-start) and not (@ai = flex-end) {
+  -webkit-box-align: @ai;
+  -ms-flex-align: @ai;
+  -webkit-align-items: @ai;
+  align-items: @ai;
+}
 
 
 

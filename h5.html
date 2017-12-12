@@ -17,7 +17,7 @@
     <div class="section">
         <div id="nav_menu">
             <nav class="bg-red flex-space pd20">
-                <img class="logo" src="./images/h5/logo2@2x.png" alt="">
+                <img class="logo" src="images/logo.png" alt="">
                 <ul class="flex-end white nav-bar">
                     <li data-menuanchor="page2"><a class="white" href="#page2">優勢</a></li>
                     <li data-menuanchor="page3"><a class="white" href="#page3">彩種</a></li>
@@ -155,7 +155,7 @@
         <footer class="container">
             <div class="flex-middle bottom-logo">
                 <div class="left-line"></div>
-                <img src="./images/h5/logo2@2x.png" alt="">
+                <img src="images/logo.png" alt="">
                 <div class="right-line"></div>
             </div>
             <p class="center fs12">Copyrights by Rolling Bet 2018. All Rights Reserved.</p>
@@ -178,9 +178,7 @@
     const $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
     let meta = document.getElementById('viewport');
     function reHtmlSize(){
-       if(/Android|webOS|iPhone|Windows Phone|iPod|BlackBerry|SymbianOS/i.test(navigator.userAgent) || window.innerWidth <= 800) {
-        
-        }else{
+        if(window.innerWidth > 768) {
             location.href = "index.html"
         }
         let dpr = Math.round(window.devicePixelRatio);

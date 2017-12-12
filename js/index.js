@@ -61,7 +61,7 @@ $(function() {
     window.onresize= redom
     function redom() {
         if(window.innerWidth < 767) {
-            location.href = 'h5.html'
+            location.href = 'yunweih5.html'
         }
     }
     redom()

@@ -1,4 +1,5 @@
 @import './var';
+@import "fun";
 body,html {
   margin:0;
   padding:0;
@@ -130,53 +131,19 @@ a {
 .m-auto{
   margin: 0 auto
 }
-.flexbox() {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex!important;
-}
 .flex-middle { //居中 垂直
   .flexbox();
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  .align-items(center);
+  .justify-content(center);
 }
-//.flex-left {
-//  display: flex;
-//  justify-content: flex-start;
-//}
+
 .flex-space {
   .flexbox();
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  .justify-content(space-between);
+  .align-items(center);
 }
 .flex-end{
   .flexbox();
-  align-items: flex-end;
-  justify-content: space-between;
+  .align-items(flex-end);
+  .justify-content(space-between);
 }
-//.flex-between {
-//  display: flex;
-//  justify-content: space-between;
-//}
-//.right-line {
-//  position:relative;
-//  &:after{
-//    content:'';
-//    display: block;
-//    position:absolute;
-//    top:50%;
-//    transform:translate3d(-50%,0,0);
-//    width:1px;
-//    background:@grayLighter;
-//  }
-//}
